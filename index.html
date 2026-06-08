@@ -11,33 +11,34 @@
     <h1 class="main_task">Мои Задачи</h1>
 
     <div class="task">
-       <input type="text" id="task-input" placeholder="Введите задачу...">
-       <button>Добавить</button>
-       <button>Удалить</button>
+       <input type="text" id="task_input" placeholder="Введите задачу...">
+       <div class="add_buttons">
+            <button id="add_task">Добавить</button>
+            <button id="clear_tasks">Очистить</button>
+       </div>
     </div>
 
     <div class="main_container">
-            <div class="planned_tasks">
+            <div class="planned_tasks tasks">
                 <h2>Запланировано</h2>
                 <ul id="planned-list"></ul>
             </div>
     
-            <div class="progress_tasks">
+            <div class="progress_tasks tasks">
                 <h2>В работе</h2>
                 <ul id="progress-list"></ul>
             </div>
     
-            <div class="completed_tasks">
+            <div class="completed_tasks tasks">
                 <h2>Завершено</h2>
                 <ul id="completed-list"></ul>
             </div>
     
-            <div class="deleted_tasks">
+            <div class="deleted_tasks tasks">
                 <h2>Удалено</h2>
                 <ul id="deleted-list"></ul>
 
-                <div class="delete_button">
-				<button class="button delete-button">Очистить</button>
+                
 			</div>
             </div>
     </div>
