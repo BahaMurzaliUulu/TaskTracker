@@ -1,9 +1,30 @@
-const btn = document.querySelector('#add_task');
 
-btn.addEventListener('click', () => {
-    console.log('Кнопка нажата')
-})
+const taskInput = document.querySelector('#task_input');
+const addTaskBtn = document.querySelector('#add_task');
+const plannedList = document.querySelector('#planned-list');
 
-btn.append(#add_task);
+
+function addTask() {
+    const taskText = taskInput.value.trim(); 
+    if (taskText === "") {
+        alert("Введите название задачи!");
+        return;
+    }
+    const li = document.createElement('li');
+    li.textContent = taskText;
+
+    plannedList.appendChild(li);
+
+   
+    taskInput.value = "";
+}
+
+addTaskBtn.addEventListener('click', addTask);
+
+taskInput.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
 
 
