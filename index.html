@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="main_task">Мои Задачи</h1>
+
+    <div class="task">
+       <input type="text" id="task-input" placeholder="Введите задачу...">
+       <button>Добавить</button>
+       <button>Удалить</button>
+    </div>
+
+    <div class="main_container">
+            <div class="planned_tasks">
+                <h2>Запланировано</h2>
+                <ul id="planned-list"></ul>
+            </div>
+    
+            <div class="progress_tasks">
+                <h2>В работе</h2>
+                <ul id="progress-list"></ul>
+            </div>
+    
+            <div class="completed_tasks">
+                <h2>Завершено</h2>
+                <ul id="completed-list"></ul>
+            </div>
+    
+            <div class="deleted_tasks">
+                <h2>Удалено</h2>
+                <ul id="deleted-list"></ul>
+
+                <div class="delete_button">
+				<button class="button delete-button">Очистить</button>
+			</div>
+            </div>
+    </div>
+        
+   
+
+</body>
+</html>
